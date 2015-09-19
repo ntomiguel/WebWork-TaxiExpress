@@ -1,0 +1,37 @@
+<%= form_for(@reserf) do |f| %>
+  <% if @reserf.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reserf.errors.count, "error") %> prohibited this reserf from being saved:</h2>
+
+      <ul>
+      <% @reserf.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :partida %><br>
+    <%= f.text_field :partida %>
+  </div>
+  <div class="field">
+    <%= f.label :llegada %><br>
+    <%= f.text_field :llegada %>
+  </div>
+  <div class="field">
+    <%= f.label :pasajeros %><br>
+    <%= f.number_field :pasajeros %>
+  </div>
+  <div class="field">
+    <%= f.label :auto %><br>
+    <%= f.text_field :auto %>
+  </div>
+  <div class="field">
+    <%= f.label :pago %><br>
+    <%= f.text_field :pago %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

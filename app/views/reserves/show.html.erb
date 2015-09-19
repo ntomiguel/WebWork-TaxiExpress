@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Partida:</strong>
+  <%= @reserf.partida %>
+</p>
+
+<p>
+  <strong>Llegada:</strong>
+  <%= @reserf.llegada %>
+</p>
+
+<p>
+  <strong>Pasajeros:</strong>
+  <%= @reserf.pasajeros %>
+</p>
+
+<p>
+  <strong>Auto:</strong>
+  <%= @reserf.auto %>
+</p>
+
+<p>
+  <strong>Pago:</strong>
+  <%= @reserf.pago %>
+</p>
+
+<%= link_to 'Edit', edit_reserf_path(@reserf) %> |
+<%= link_to 'Back', reserves_path %>

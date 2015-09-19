@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  partida: MyString
+  llegada: MyString
+  pasajeros: 1
+  auto: MyString
+  pago: MyString
+
+two:
+  partida: MyString
+  llegada: MyString
+  pasajeros: 1
+  auto: MyString
+  pago: MyString
